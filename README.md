@@ -1,6 +1,6 @@
 # account-balance-pyspark
 
-## Introduction
+## Introdução
 
 ```account-balance-pyspark``` é um Notebook Python que utiliza o Apache Spark para calcular o saldo final de clientes com base em saldos iniciais e movimentações diárias de uma série de arquivos. O objetivo é consolidar todas as operações financeiras de cada cliente ao longo de um período especificado e aplicar eventuais estornos. A seguir, é descrita a estrutura e funcionamento do código.
 
@@ -23,8 +23,8 @@ O diretório do projeto contém os seguintes arquivos:
 **Descrição dos arquivos**:
 
 - **tabela_saldo_inicial.txt**: Arquivo CSV que contém o saldo inicial dos clientes.
-- **movimentacao_dia_DD_MM_YYYY.txt**: Arquivos CSV que contêm as movimentações diárias dos clientes, que serão processados donamicamente.
-- **account_balance_pyspark.ipynb**: Notebook python para o processamento com Pyspark.
+- **movimentacao_dia_DD_MM_YYYY.txt**: Arquivos CSV que contêm as movimentações diárias dos clientes, que serão processados dinamicamente.
+- **account_balance_pyspark.ipynb**: Notebook python para o processamento com PySpark.
 - **README.md**: Fornece uma visão geral e instruções de configuração para o projeto.
 
 
@@ -49,14 +49,15 @@ O diretório do projeto contém os seguintes arquivos:
     ```
 3. Organize os Arquivos de Dados:
 
-    - Certifique-se de que tenha um diretório chamado `data` na mesma pasta onde o script Python está localizado.
+    - Certifique-se de que tenha um diretório chamado `data` na mesma pasta onde o notebook Python está localizado.
     - Certifique-se de que os arquivos `tabela_saldo_inicial.txt` e todos os arquivos `movimentacao_dia_DD_MM_YYYY.txt` estão no diretório `data`.
 
 ## Como Executar
 
 O Notebook Python cuidará da execução dos códigos quando acionado. Podendo executar por blocos individuais de código, ou execução completa do notebook.
 
+O progresso do processamento será mostrado no próprio notebook durante a execução.
 
 ## Conclusão
 
-Este script oferece uma maneira eficiente de calcular e atualizar saldos de clientes com base em dados de movimentações diárias usando o Apache Spark. A capacidade de aplicar estornos e processar grandes volumes de dados o torna adequado para aplicações em sistemas financeiros e de contabilidade.
+Este notebook python mostra uma maneira eficiente de calcular e atualizar saldos de clientes com base em dados de movimentações diárias usando o Apache Spark. A capacidade de aplicar estornos e processar grandes volumes de dados o torna adequado para aplicações em sistemas financeiros e de contabilidade.
